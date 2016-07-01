@@ -115,7 +115,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if error != nil {
                 self.popUp("Error logging in", message: "Email/Password is incorrect!", alertTitle: "Try Again")
             } else {
-                let user = ["name": (User?.displayName)!, "email": (User?.email)!]
+                let user = ["provider": "email", "name": (User?.displayName)!, "email": (User?.email)!]
                 networkPacket.service.newUser((User?.uid)!, users: user)
                 
                 NSUserDefaults.standardUserDefaults().setValue(User?.uid, forKey: key)

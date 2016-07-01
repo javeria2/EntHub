@@ -40,5 +40,4 @@ class networkPacket {
     func newUser(uid: String, users: Dictionary<String, String>) {
         user.child(uid).updateChildValues(users) //or setValue(users)
     }
-    
 }

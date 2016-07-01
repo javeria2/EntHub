@@ -14,6 +14,7 @@
             <string>Catull-Regular</string>
             <string>Catull-Regular</string>
             <string>Catull-Regular</string>
+            <string>Catull-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -188,12 +189,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ac-pB-vJb" customClass="shadowView" customModule="entHub" customModuleProvider="target">
+                                <rect key="frame" x="20" y="72" width="335" height="57"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="I9j-en-gQE">
+                                        <rect key="frame" x="8" y="8" width="319" height="41"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What's your next-big idea?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YS2-NF-Kul" customClass="shadowTextView" customModule="entHub" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="213" height="41"/>
+                                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-icon" translatesAutoresizingMaskIntoConstraints="NO" id="8vM-aI-zev" customClass="shadowImageView" customModule="entHub" customModuleProvider="target">
+                                                <rect key="frame" x="225" y="0.0" width="41" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="41" id="aos-2a-NSS"/>
+                                                    <constraint firstAttribute="height" constant="41" id="te3-m0-g1G"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM0-QA-Tyi" customClass="shadowButtonView" customModule="entHub" customModuleProvider="target">
+                                                <rect key="frame" x="278" y="0.0" width="41" height="41"/>
+                                                <color key="backgroundColor" red="0.20000000000000001" green="0.60784313725490191" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="41" id="6Nq-Sz-M9d"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Catull-Regular" family="Catull" pointSize="15"/>
+                                                <state key="normal" title="Post">
+                                                    <color key="titleColor" red="0.95083888414342632" green="1" blue="0.96413775219415376" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="I9j-en-gQE" firstAttribute="top" secondItem="6ac-pB-vJb" secondAttribute="topMargin" id="3XH-wK-TVw"/>
+                                    <constraint firstItem="I9j-en-gQE" firstAttribute="leading" secondItem="6ac-pB-vJb" secondAttribute="leadingMargin" id="CGI-D8-zHq"/>
+                                    <constraint firstAttribute="height" constant="57" id="G1X-Xa-SM7"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="I9j-en-gQE" secondAttribute="bottom" id="ILL-TC-e9r"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="I9j-en-gQE" secondAttribute="trailing" id="YyS-37-keq"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="352" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hQE-xK-ReQ">
-                                <rect key="frame" x="20" y="72" width="335" height="587"/>
-                                <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="137" width="335" height="522"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="352" id="3EF-de-kzo" customClass="TableCell" customModule="entHub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="335" height="352"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="3EF-de-kzo" customClass="TableCell" customModule="entHub" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="352"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3EF-de-kzo" id="u05-jC-0wO">
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="352"/>
@@ -274,7 +317,9 @@
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="dp" destination="eoz-2h-d2r" id="U84-6o-XUS"/>
+                                            <outlet property="likes" destination="rS0-gS-Awo" id="Q2a-GR-zEW"/>
                                             <outlet property="mainImage" destination="Cpe-Z5-sQR" id="wba-wa-YXD"/>
+                                            <outlet property="postText" destination="TUJ-NI-fcH" id="Qql-cp-0Qr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -287,10 +332,19 @@
                         <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="hQE-xK-ReQ" firstAttribute="leading" secondItem="VPl-iF-ZPf" secondAttribute="leading" constant="20" id="6Fc-OL-sbZ"/>
+                            <constraint firstAttribute="trailing" secondItem="6ac-pB-vJb" secondAttribute="trailing" constant="20" id="Hol-Cn-ebf"/>
+                            <constraint firstItem="6ac-pB-vJb" firstAttribute="top" secondItem="5fK-Yr-aEZ" secondAttribute="bottom" constant="8" id="M1M-H0-tds"/>
+                            <constraint firstItem="hQE-xK-ReQ" firstAttribute="top" secondItem="6ac-pB-vJb" secondAttribute="bottom" constant="8" id="M1d-a3-sVj"/>
+                            <constraint firstItem="6ac-pB-vJb" firstAttribute="leading" secondItem="VPl-iF-ZPf" secondAttribute="leading" constant="20" id="QTI-K7-znv"/>
                             <constraint firstItem="hQE-xK-ReQ" firstAttribute="top" secondItem="5fK-Yr-aEZ" secondAttribute="bottom" constant="8" id="ZVR-CG-oHc"/>
                             <constraint firstItem="Fzq-el-67C" firstAttribute="top" secondItem="hQE-xK-ReQ" secondAttribute="bottom" constant="8" id="cVg-CF-q7b"/>
                             <constraint firstAttribute="trailing" secondItem="hQE-xK-ReQ" secondAttribute="trailing" constant="20" id="ePV-hZ-9nQ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ZVR-CG-oHc"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="xO8-nY-4Cd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -324,6 +378,7 @@
     </scenes>
     <resources>
         <image name="app-example" width="620" height="388"/>
+        <image name="camera-icon" width="41" height="41"/>
         <image name="dp" width="72" height="72"/>
         <image name="facebook" width="217" height="218"/>
         <image name="not-liked" width="72" height="72"/>
