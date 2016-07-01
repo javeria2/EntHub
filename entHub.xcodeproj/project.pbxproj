@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2C83C2E77CEE15273B2978 /* Pods_entHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3643AE4B70B09F3FE1273EC /* Pods_entHub.framework */; };
+		A3E6E4F61D247696009C855F /* networkPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E6E4F51D247696009C855F /* networkPacket.swift */; };
+		A3E6E4F81D2483D4009C855F /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E6E4F71D2483D4009C855F /* constants.swift */; };
+		A3E6E4FC1D249E4C009C855F /* TablePosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E6E4FB1D249E4C009C855F /* TablePosts.swift */; };
+		A3E6E4FE1D249F38009C855F /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E6E4FD1D249F38009C855F /* TableCell.swift */; };
 		A3F834D31D23CFB50055A300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F834D21D23CFB50055A300 /* AppDelegate.swift */; };
 		A3F834D51D23CFB50055A300 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F834D41D23CFB50055A300 /* ViewController.swift */; };
 		A3F834D81D23CFB50055A300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F834D61D23CFB50055A300 /* Main.storyboard */; };
 		A3F834DA1D23CFB50055A300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F834D91D23CFB50055A300 /* Assets.xcassets */; };
 		A3F834DD1D23CFB50055A300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F834DB1D23CFB50055A300 /* LaunchScreen.storyboard */; };
+		A3F834E51D23D0690055A300 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3F834E41D23D0690055A300 /* GoogleService-Info.plist */; };
+		A3F834E81D23D1550055A300 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3F834E71D23D1550055A300 /* Billabong.ttf */; };
+		A3F834EC1D23D4B60055A300 /* Catull.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3F834EB1D23D4B60055A300 /* Catull.ttf */; };
+		A3F834F01D23DE2E0055A300 /* shadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F834EF1D23DE2E0055A300 /* shadowView.swift */; };
+		A3F834F41D23E1F20055A300 /* shadowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F834F31D23E1F20055A300 /* shadowButtonView.swift */; };
+		A3F834F81D23E27E0055A300 /* shadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F834F71D23E27E0055A300 /* shadowImageView.swift */; };
+		A3F834FA1D23E4C60055A300 /* shadowTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F834F91D23E4C60055A300 /* shadowTextView.swift */; };
+		A3F834FC1D2461CD0055A300 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F834FB1D2461CD0055A300 /* Bolts.framework */; };
+		A3F834FE1D2461DE0055A300 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F834FD1D2461DE0055A300 /* FBSDKCoreKit.framework */; };
+		A3F835001D2461E70055A300 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F834FF1D2461E70055A300 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55604D20696B7BE6B5147AA4 /* Pods-entHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-entHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-entHub/Pods-entHub.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E6E4F51D247696009C855F /* networkPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = networkPacket.swift; sourceTree = "<group>"; };
+		A3E6E4F71D2483D4009C855F /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		A3E6E4FB1D249E4C009C855F /* TablePosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablePosts.swift; sourceTree = "<group>"; };
+		A3E6E4FD1D249F38009C855F /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		A3F834CF1D23CFB50055A300 /* entHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F834D21D23CFB50055A300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F834D41D23CFB50055A300 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +42,18 @@
 		A3F834D91D23CFB50055A300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3F834DC1D23CFB50055A300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3F834DE1D23CFB50055A300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F834E41D23D0690055A300 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3F834E71D23D1550055A300 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
+		A3F834EB1D23D4B60055A300 /* Catull.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Catull.ttf; sourceTree = "<group>"; };
+		A3F834EF1D23DE2E0055A300 /* shadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shadowView.swift; sourceTree = "<group>"; };
+		A3F834F31D23E1F20055A300 /* shadowButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shadowButtonView.swift; sourceTree = "<group>"; };
+		A3F834F71D23E27E0055A300 /* shadowImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shadowImageView.swift; sourceTree = "<group>"; };
+		A3F834F91D23E4C60055A300 /* shadowTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shadowTextView.swift; sourceTree = "<group>"; };
+		A3F834FB1D2461CD0055A300 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		A3F834FD1D2461DE0055A300 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		A3F834FF1D2461E70055A300 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		D3643AE4B70B09F3FE1273EC /* Pods_entHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_entHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D36AC5F5A0AD55EBCCEC0B3A /* Pods-entHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-entHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-entHub/Pods-entHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +61,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2C83C2E77CEE15273B2978 /* Pods_entHub.framework in Frameworks */,
+				A3F834FE1D2461DE0055A300 /* FBSDKCoreKit.framework in Frameworks */,
+				A3F835001D2461E70055A300 /* FBSDKLoginKit.framework in Frameworks */,
+				A3F834FC1D2461CD0055A300 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27A824437361B26507AD982B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55604D20696B7BE6B5147AA4 /* Pods-entHub.debug.xcconfig */,
+				D36AC5F5A0AD55EBCCEC0B3A /* Pods-entHub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A523A9EA9267D9BE16CBDB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3F834FF1D2461E70055A300 /* FBSDKLoginKit.framework */,
+				A3F834FD1D2461DE0055A300 /* FBSDKCoreKit.framework */,
+				A3F834FB1D2461CD0055A300 /* Bolts.framework */,
+				D3643AE4B70B09F3FE1273EC /* Pods_entHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3E6E4F41D247677009C855F /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				A3E6E4F51D247696009C855F /* networkPacket.swift */,
+			);
+			name = Networks;
+			sourceTree = "<group>";
+		};
+		A3E6E4F91D2483D9009C855F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A3E6E4F71D2483D4009C855F /* constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		A3E6E4FA1D249E24009C855F /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				A3E6E4FB1D249E4C009C855F /* TablePosts.swift */,
+				A3E6E4FD1D249F38009C855F /* TableCell.swift */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
 		A3F834C61D23CFB50055A300 = {
 			isa = PBXGroup;
 			children = (
 				A3F834D11D23CFB50055A300 /* entHub */,
 				A3F834D01D23CFB50055A300 /* Products */,
+				27A824437361B26507AD982B /* Pods */,
+				8A523A9EA9267D9BE16CBDB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +137,48 @@
 		A3F834D11D23CFB50055A300 /* entHub */ = {
 			isa = PBXGroup;
 			children = (
-				A3F834D21D23CFB50055A300 /* AppDelegate.swift */,
-				A3F834D41D23CFB50055A300 /* ViewController.swift */,
-				A3F834D61D23CFB50055A300 /* Main.storyboard */,
-				A3F834D91D23CFB50055A300 /* Assets.xcassets */,
-				A3F834DB1D23CFB50055A300 /* LaunchScreen.storyboard */,
-				A3F834DE1D23CFB50055A300 /* Info.plist */,
+				A3E6E4FA1D249E24009C855F /* Table */,
+				A3E6E4F41D247677009C855F /* Networks */,
+				A3F834F21D23E0E20055A300 /* Defaults */,
+				A3E6E4F91D2483D9009C855F /* Constants */,
+				A3F834F11D23E0D20055A300 /* View */,
+				A3F834E61D23D1380055A300 /* Resources */,
 			);
 			path = entHub;
+			sourceTree = "<group>";
+		};
+		A3F834E61D23D1380055A300 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3F834D91D23CFB50055A300 /* Assets.xcassets */,
+				A3F834EB1D23D4B60055A300 /* Catull.ttf */,
+				A3F834E71D23D1550055A300 /* Billabong.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A3F834F11D23E0D20055A300 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3F834D41D23CFB50055A300 /* ViewController.swift */,
+				A3F834EF1D23DE2E0055A300 /* shadowView.swift */,
+				A3F834F31D23E1F20055A300 /* shadowButtonView.swift */,
+				A3F834F71D23E27E0055A300 /* shadowImageView.swift */,
+				A3F834F91D23E4C60055A300 /* shadowTextView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A3F834F21D23E0E20055A300 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				A3F834D21D23CFB50055A300 /* AppDelegate.swift */,
+				A3F834D61D23CFB50055A300 /* Main.storyboard */,
+				A3F834DB1D23CFB50055A300 /* LaunchScreen.storyboard */,
+				A3F834DE1D23CFB50055A300 /* Info.plist */,
+				A3F834E41D23D0690055A300 /* GoogleService-Info.plist */,
+			);
+			name = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3F834E11D23CFB50055A300 /* Build configuration list for PBXNativeTarget "entHub" */;
 			buildPhases = (
+				72E82F964DC212C3F7044AC7 /* [CP] Check Pods Manifest.lock */,
 				A3F834CB1D23CFB50055A300 /* Sources */,
 				A3F834CC1D23CFB50055A300 /* Frameworks */,
 				A3F834CD1D23CFB50055A300 /* Resources */,
+				17B8F3882CAED5D8D9A8EC33 /* [CP] Embed Pods Frameworks */,
+				A6A1ED940AB72301A2F4C70D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,20 +243,79 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F834DD1D23CFB50055A300 /* LaunchScreen.storyboard in Resources */,
+				A3F834E51D23D0690055A300 /* GoogleService-Info.plist in Resources */,
 				A3F834DA1D23CFB50055A300 /* Assets.xcassets in Resources */,
+				A3F834E81D23D1550055A300 /* Billabong.ttf in Resources */,
 				A3F834D81D23CFB50055A300 /* Main.storyboard in Resources */,
+				A3F834EC1D23D4B60055A300 /* Catull.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17B8F3882CAED5D8D9A8EC33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-entHub/Pods-entHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72E82F964DC212C3F7044AC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A1ED940AB72301A2F4C70D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-entHub/Pods-entHub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3F834CB1D23CFB50055A300 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3E6E4FE1D249F38009C855F /* TableCell.swift in Sources */,
+				A3F834F81D23E27E0055A300 /* shadowImageView.swift in Sources */,
 				A3F834D51D23CFB50055A300 /* ViewController.swift in Sources */,
+				A3F834F01D23DE2E0055A300 /* shadowView.swift in Sources */,
+				A3F834FA1D23E4C60055A300 /* shadowTextView.swift in Sources */,
+				A3F834F41D23E1F20055A300 /* shadowButtonView.swift in Sources */,
 				A3F834D31D23CFB50055A300 /* AppDelegate.swift in Sources */,
+				A3E6E4F61D247696009C855F /* networkPacket.swift in Sources */,
+				A3E6E4FC1D249E4C009C855F /* TablePosts.swift in Sources */,
+				A3E6E4F81D2483D4009C855F /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +426,14 @@
 		};
 		A3F834E21D23CFB50055A300 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55604D20696B7BE6B5147AA4 /* Pods-entHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = entHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanchayjaveria.entHub;
@@ -258,8 +443,14 @@
 		};
 		A3F834E31D23CFB50055A300 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D36AC5F5A0AD55EBCCEC0B3A /* Pods-entHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = entHub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanchayjaveria.entHub;
@@ -286,6 +477,7 @@
 				A3F834E31D23CFB50055A300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

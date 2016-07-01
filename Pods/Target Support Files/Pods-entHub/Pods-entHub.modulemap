@@ -1,0 +1,6 @@
+framework module Pods_entHub {
+  umbrella header "Pods-entHub-umbrella.h"
+
+  export *
+  module * { export * }
+}
