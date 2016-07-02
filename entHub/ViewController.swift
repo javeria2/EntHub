@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
      @param title: title of the alert!
      @param message: alert message to be displayed!
      @param alertTitle: action message to be displayed! */
-    internal func popUp(title: String, message: String, alertTitle: String) {
+    func popUp(title: String, message: String, alertTitle: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: alertTitle, style: UIAlertActionStyle.Default, handler: nil))
         presentViewController(alert, animated: true, completion: nil)

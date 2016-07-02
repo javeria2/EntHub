@@ -17,8 +17,13 @@ class Posts {
     private var uid: String!
     
     var Description: String {
+        if postDescription == nil {
+            postDescription = ""
+        }
         return postDescription
     }
+    
+    
     var username: String {
         return postingUsername
     }

@@ -31,6 +31,7 @@ class networkPacket {
         return userUrl
     }
     
+    
     var currentUser: FIRDatabaseReference {
         let uid = NSUserDefaults.standardUserDefaults().valueForKey(key) as! String //insert KEY_UID here
         let user = url.child("users").child(uid)

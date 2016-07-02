@@ -8,16 +8,21 @@
 
 import UIKit
 import Alamofire
+import Firebase
 
 class TableCell: UITableViewCell {
     
+    var Post: Posts!
     var req: Request?
     @IBOutlet weak var postText: UITextView!
     @IBOutlet weak var likes: UILabel!
     @IBOutlet weak var dp: UIImageView!
     @IBOutlet weak var mainImage: UIImageView!
+    var fetchLikes: FIRDatabaseReference!
+    @IBOutlet weak var likeUnlike: UIImageView!
     
     override func awakeFromNib() {
+        fetchLikes = FIRDatabaseReference()
         super.awakeFromNib()
     }
     
@@ -28,6 +33,8 @@ class TableCell: UITableViewCell {
     }
     
     func configureCell(fetchPost: Posts, image: UIImage?) {
+        Post = fetchPost
+        fetchLikes = networkPacket.service.currentUser.child("likes").child(fetchPost.Id)
         if fetchPost.Image == nil {
             mainImage.hidden = true
         } else {
@@ -38,13 +45,22 @@ class TableCell: UITableViewCell {
                     } else {
                         let fetchImg = UIImage(data: data!)!
                         self.mainImage.image = fetchImg
-                        
+                        TablePosts.cacheImages.setObject(fetchImg, forKey: fetchPost.Image!)
                     }
                 })
             } else {
                 mainImage.image = image
             }
         }
+        
+        fetchLikes.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            if let returnedNull = snapshot.value as? NSNull {
+                self.likeUnlike.image = UIImage(named: "not-liked")
+            } else {
+                self.likeUnlike.image = UIImage(named: "liked")
+            }
+        })
+        
         postText.text = fetchPost.Description
         likes.text = "\(fetchPost.likeNo) likes"
     }

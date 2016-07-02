@@ -201,12 +201,16 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-icon" translatesAutoresizingMaskIntoConstraints="NO" id="8vM-aI-zev" customClass="shadowImageView" customModule="entHub" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-icon" translatesAutoresizingMaskIntoConstraints="NO" id="8vM-aI-zev" customClass="shadowImageView" customModule="entHub" customModuleProvider="target">
                                                 <rect key="frame" x="225" y="0.0" width="41" height="41"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="41" id="aos-2a-NSS"/>
                                                     <constraint firstAttribute="height" constant="41" id="te3-m0-g1G"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="3Db-Ox-D26" appends="YES" id="GKY-X7-L0j"/>
+                                                </connections>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM0-QA-Tyi" customClass="shadowButtonView" customModule="entHub" customModuleProvider="target">
                                                 <rect key="frame" x="278" y="0.0" width="41" height="41"/>
@@ -218,6 +222,9 @@
                                                 <state key="normal" title="Post">
                                                     <color key="titleColor" red="0.95083888414342632" green="1" blue="0.96413775219415376" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="post:" destination="Ixg-ES-89M" eventType="touchUpInside" id="u8h-jC-rpk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -317,6 +324,7 @@
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="dp" destination="eoz-2h-d2r" id="U84-6o-XUS"/>
+                                            <outlet property="likeUnlike" destination="h5L-UB-zWV" id="ErI-bh-x1l"/>
                                             <outlet property="likes" destination="rS0-gS-Awo" id="Q2a-GR-zEW"/>
                                             <outlet property="mainImage" destination="Cpe-Z5-sQR" id="wba-wa-YXD"/>
                                             <outlet property="postText" destination="TUJ-NI-fcH" id="Qql-cp-0Qr"/>
@@ -349,10 +357,17 @@
                     <navigationItem key="navigationItem" id="xO8-nY-4Cd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="cameraRoll" destination="8vM-aI-zev" id="PWv-i0-qdB"/>
                         <outlet property="table" destination="hQE-xK-ReQ" id="FNJ-fb-eay"/>
+                        <outlet property="textField" destination="YS2-NF-Kul" id="9Eo-cp-tUC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cvm-l7-FiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3Db-Ox-D26">
+                    <connections>
+                        <action selector="selectImageFromCameraRoll:" destination="Ixg-ES-89M" id="iLc-dP-SmQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1285.5" y="279.5"/>
         </scene>
