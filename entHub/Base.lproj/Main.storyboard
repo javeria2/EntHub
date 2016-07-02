@@ -252,7 +252,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="02s-AN-hOU" customClass="shadowView" customModule="entHub" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="8" width="335" height="335.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3oX-he-0jT">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="3oX-he-0jT">
                                                             <rect key="frame" x="8" y="8" width="319" height="319"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TOx-ea-vnz">
@@ -270,7 +270,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Cgg-ue-CLh">
                                                                             <rect key="frame" x="204" y="0.0" width="115" height="72"/>
                                                                             <subviews>
-                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="not-liked" translatesAutoresizingMaskIntoConstraints="NO" id="h5L-UB-zWV">
+                                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notliked" translatesAutoresizingMaskIntoConstraints="NO" id="h5L-UB-zWV">
                                                                                     <rect key="frame" x="55" y="0.0" width="60" height="56"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" constant="60" id="UOm-qR-PH6"/>
@@ -287,8 +287,16 @@
                                                                         </stackView>
                                                                     </subviews>
                                                                 </stackView>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="toh-7I-6oe">
+                                                                    <rect key="frame" x="0.0" y="78" width="319" height="2"/>
+                                                                    <color key="backgroundColor" red="0.20000000000000001" green="0.60784313725490191" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="2" id="fc9-VO-epj"/>
+                                                                        <constraint firstAttribute="width" constant="319" id="qgJ-l7-Lr9"/>
+                                                                    </constraints>
+                                                                </view>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TUJ-NI-fcH">
-                                                                    <rect key="frame" x="0.0" y="72" width="319" height="70"/>
+                                                                    <rect key="frame" x="0.0" y="86" width="319" height="70"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="C6M-gq-zb3"/>
@@ -300,9 +308,13 @@
                                                                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                                                 </textView>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-example" translatesAutoresizingMaskIntoConstraints="NO" id="Cpe-Z5-sQR">
-                                                                    <rect key="frame" x="0.0" y="142" width="319" height="177"/>
+                                                                    <rect key="frame" x="0.0" y="162" width="319" height="157"/>
                                                                 </imageView>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="toh-7I-6oe" firstAttribute="trailing" secondItem="3oX-he-0jT" secondAttribute="trailingMargin" id="FSE-Px-nZf"/>
+                                                                <constraint firstItem="toh-7I-6oe" firstAttribute="leading" secondItem="3oX-he-0jT" secondAttribute="leadingMargin" id="lyA-N1-0xO"/>
+                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -396,6 +408,6 @@
         <image name="camera-icon" width="41" height="41"/>
         <image name="dp" width="72" height="72"/>
         <image name="facebook" width="217" height="218"/>
-        <image name="not-liked" width="72" height="72"/>
+        <image name="notliked" width="72" height="72"/>
     </resources>
 </document>

@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import Firebase
 
 class Posts {
     
+    private var postReference: FIRDatabaseReference!
     private var postDescription: String!
     private var postingUsername: String!
     private var likes: Int!
     private var image: String?
     private var uid: String!
+    
     
     var Description: String {
         if postDescription == nil {
@@ -22,7 +25,10 @@ class Posts {
         }
         return postDescription
     }
-    
+   
+    var post: FIRDatabaseReference {
+        return postReference
+    }
     
     var username: String {
         return postingUsername
@@ -45,6 +51,7 @@ class Posts {
     
     init(uid: String, dict: Dictionary<String, AnyObject>) {
         self.uid = uid
+        self.postReference = networkPacket.service.post.child(key)
         if let likes = dict["likes"] as? Int {
             self.likes = likes
         }
@@ -54,6 +61,15 @@ class Posts {
         if let Description = dict["description"] as? String {
             postDescription = Description
         }
+    }
+    
+    func likeArithmetic(flag: Bool) {
+        if flag {
+            likes = likes + 1
+        } else {
+            likes = likes - 1
+        }
+        postReference.child("likes").setValue(likes)
     }
 
 }

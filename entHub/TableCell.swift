@@ -20,10 +20,32 @@ class TableCell: UITableViewCell {
     @IBOutlet weak var mainImage: UIImageView!
     var fetchLikes: FIRDatabaseReference!
     @IBOutlet weak var likeUnlike: UIImageView!
+    var recognizer: UITapGestureRecognizer!
     
     override func awakeFromNib() {
+        recognizer = UITapGestureRecognizer(target: self, action: "tapped:")
+        recognizer.numberOfTapsRequired = 1
+        likeUnlike.addGestureRecognizer(recognizer)
+        likeUnlike.userInteractionEnabled = true
+        
         fetchLikes = FIRDatabaseReference()
         super.awakeFromNib()
+    }
+    
+    func tapped(recognizer: UITapGestureRecognizer) {
+        fetchLikes.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            if let returnedNull = snapshot.value as? NSNull {
+                self.likeUnlike.image = UIImage(named: "liked")
+                self.Post.likeArithmetic(true)
+                self.fetchLikes.setValue(true)
+                print(1)
+            } else {
+                self.likeUnlike.image = UIImage(named: "notliked")
+                self.Post.likeArithmetic(false)
+                self.fetchLikes.removeValue()
+                print(2)
+            }
+        })
     }
     
     override func drawRect(rect: CGRect) {
@@ -55,9 +77,11 @@ class TableCell: UITableViewCell {
         
         fetchLikes.observeSingleEventOfType(.Value, withBlock: { snapshot in
             if let returnedNull = snapshot.value as? NSNull {
-                self.likeUnlike.image = UIImage(named: "not-liked")
+                self.likeUnlike.image = UIImage(named: "notliked")
+                print(3)
             } else {
                 self.likeUnlike.image = UIImage(named: "liked")
+                print(4)
             }
         })
         
